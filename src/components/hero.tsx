@@ -32,7 +32,7 @@ export default function Hero({ slides }: { slides: HeroSlide[] }) {
   }, [emblaApi]);
 
   return (
-    <div className="relative h-[600px] overflow-hidden mx-auto">
+    <div className="relative  h-screen overflow-hidden mx-auto">
       <div ref={emblaRef} className="h-full mx-auto">
         <div className="flex h-full mx-auto">
           {slides.map((slide, index) => (
@@ -123,7 +123,7 @@ export default function Hero({ slides }: { slides: HeroSlide[] }) {
                     {/* CTA Button */}
                     <Button
                       size="lg"
-                      className="rounded-none py-8 text-md bg-custom-secondary hover:bg-custom-secondary/90 text-white mt-4 transition-all duration-300"
+                      className="rounded-none px-8 py-6 text-md bg-custom-secondary hover:bg-custom-secondary/90 text-white mt-4 transition-all duration-300"
                     >
                       شاهد جميع المنتجات المعروضة للبيع
                     </Button>
